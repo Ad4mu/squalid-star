@@ -2,6 +2,7 @@
 const {title} = Astro.props;
 import "../styles/global.css";
 import RightSidebar from '../components/RightSidebar.astro';
+import Footer from '../components/Footer.astro';
 ---
 <html lang="es">
   <head>
@@ -12,5 +13,6 @@ import RightSidebar from '../components/RightSidebar.astro';
     <RightSidebar />
       <main>
         <slot /> </main>
+      <Footer />
   </body>
 </html>
