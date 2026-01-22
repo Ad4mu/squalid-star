@@ -1,0 +1,11 @@
+---
+import Card from '../components/Card.astro'; // Importamos el componente
+import Layout from '../layouts/Layout.astro';
+const titulo = "Mi Web con Astro";
+---
+
+<Layout title="Página de Inicio">
+  <h1>Bienvenido a mi sitio</h1>
+  <Card titulo={titulo} texto="Esto está dentro del layout" />
+  <Card titulo="Tarjeta 2" texto="Nueva tarjeta" />
+</Layout>
